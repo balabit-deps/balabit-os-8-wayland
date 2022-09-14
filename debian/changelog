@@ -1,3 +1,12 @@
+wayland (1.18.0-1ubuntu0.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: wl_shm reference-count overflow
+    - debian/patches/CVE-2021-3782.patch: limit size of wl_map in
+      src/wayland-private.h, src/wayland-util.c.
+    - CVE-2021-3782
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Wed, 14 Sep 2022 10:16:41 -0400
+
 wayland (1.18.0-1) unstable; urgency=medium
 
   * New upstream release.
